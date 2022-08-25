@@ -1,5 +1,7 @@
-function generateHTML(member)
-const html = `< !DOCTYPE html >
+const teamArray = require("../index.js");
+
+function generateHTML(teamArray) {
+  const html = `< !DOCTYPE html >
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +15,7 @@ const html = `< !DOCTYPE html >
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dist/style.css" />
     <title>Team Profile</title>
   </head>
 
@@ -33,21 +35,15 @@ const html = `< !DOCTYPE html >
         <div class="card-1" style="width: 18rem">
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+            <h2 class="card-title">${teamArray[0].name}</h2>
+            <h5 class="card-title">"Manager"<h5>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item">${teamArray[0].id}</li>
+            <li class="list-group-item">Email: <a href="mailto: ${teamArray[0].email}">${teamArray[0].email}</a></p></li></li>
+            <li class="list-group-item">${teamArray[0].officeNumber}</li>
           </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
+          
         </div>
         </div>
 
@@ -55,21 +51,15 @@ const html = `< !DOCTYPE html >
         <div class="card-2" style="width: 18rem">
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+              <h2 class="card-title">${teamArray[1].name}</h2>
+            <h5 class="card-title">"Manager"<h5>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item">${teamArray[1].id}</li>
+            <li class="list-group-item">Email: <a href="mailto: ${teamArray[1].email}">${teamArray[1].email}</a></p></li></li>
+            <li class="list-group-item">${teamArray[1].school}</li>
           </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
+         
         </div>
         </div>
 
@@ -77,94 +67,23 @@ const html = `< !DOCTYPE html >
         <div class="card-3" style="width: 18rem">
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+                    <h2 class="card-title">${teamArray[2].name}</h2>
+            <h5 class="card-title">"Manager"<h5>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item">${teamArray[2].id}</li>
+            <li class="list-group-item">Email: <a href="mailto: ${teamArray[2].email}">${teamArray[2].email}</a></p></li>
+            <li class="list-group-item">GitHub Username: <a href="https://www.github.com/${teamArray[2].githubusername}" download target="_blank">${teamArray[2].githubusername}</a></p></li>
           </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
+          
         </div>
         </div>
         </div>
       </div>
 
-        <div class="row">
-            <div class="col col-lg-3 m-2 mr-2">
-        <div class="card-4" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-        </div>
-
-         <div class="col col-lg-3 m-2 mr-2">
-        <div class="card-5" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-        </div>
-
-        <div class="col col-lg-3 m-2 mr-2">
-        <div class="card-6" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-      </div>
-      </div>
+        
       </div>
     </main>
   </body>
-</html>`
+</html>`;
+}

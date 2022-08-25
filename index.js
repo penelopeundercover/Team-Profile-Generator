@@ -1,4 +1,4 @@
-// const generateHTML = require("./src/generateHTML.js");
+const generateHTML = require("./src/generateHTML.js");
 const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
 const Manager = require("./lib/Manager.js");
@@ -151,3 +151,5 @@ function init() {
 }
 
 init();
+
+module.exports = teamArray;
