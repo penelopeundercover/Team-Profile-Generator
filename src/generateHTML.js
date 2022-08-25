@@ -1,6 +1,6 @@
 const teamArray = require("../index.js");
 
-function generateHTML() {
+function generateHTML(teamArray) {
   const html = () => {
     return `< !DOCTYPE html >
 <html lang="en">

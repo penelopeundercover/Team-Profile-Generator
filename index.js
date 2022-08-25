@@ -25,7 +25,7 @@ function addMember() {
       },
     ])
     .then(function (userInput) {
-      switch (userInput.addMember) {
+      switch (userInput.role) {
         case "Manager":
           addManager();
           break;
