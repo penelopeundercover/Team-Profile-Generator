@@ -1,7 +1,8 @@
 const teamArray = require("../index.js");
 
-function generateHTML(teamArray) {
-  const html = `< !DOCTYPE html >
+function generateHTML() {
+  const html = () => {
+    return `< !DOCTYPE html >
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -86,4 +87,7 @@ function generateHTML(teamArray) {
     </main>
   </body>
 </html>`;
+  };
 }
+
+module.export = generateHTML;
