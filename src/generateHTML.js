@@ -1,4 +1,6 @@
 const teamArray = require("../index.js");
+const fs = require("fs");
+const path = require("path");
 
 function generateHTML(teamArray) {
   const html = () => {
@@ -88,6 +90,7 @@ function generateHTML(teamArray) {
   </body>
 </html>`;
   };
+  fs.writeFile(path.join(__dirname, "sample", "team.html"));
 }
 
-module.export = generateHTML;
+module.exports = generateHTML;

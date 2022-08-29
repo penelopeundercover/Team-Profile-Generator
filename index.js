@@ -12,7 +12,6 @@ console.log("Follow the prompts to build your team!");
 //Function to initialize app
 function init() {
   addMember();
-  generateHTML();
 }
 function addMember() {
   inquirer
@@ -95,7 +94,7 @@ function addIntern() {
         message: "What is the intern's email address?",
       },
       {
-        type: "number",
+        type: "input",
         name: "school",
         message: "What school is the intern attending?",
       },
@@ -130,7 +129,7 @@ function addEngineer() {
         message: "What is the engineer's email address?",
       },
       {
-        type: "number",
+        type: "input",
         name: "github",
         message: "What is the engineer's github username?",
       },
