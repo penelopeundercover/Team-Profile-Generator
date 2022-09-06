@@ -90,7 +90,10 @@ function generateHTML(teamArray) {
   </body>
 </html>`;
   };
-  fs.writeFile(path.join(__dirname, "sample", "team.html"));
-}
 
+  fs.writeFile("./sample/team.html", html, function (err) {
+    if (err) throw err;
+    console.log("All done! Your team profile is ready in sample/team.html!");
+  });
+}
 module.exports = generateHTML;
