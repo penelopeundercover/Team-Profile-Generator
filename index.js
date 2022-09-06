@@ -35,7 +35,7 @@ function addMember() {
           addEngineer();
           break;
         default:
-          generateHTML();
+          generateHTML(teamArray);
       }
     });
 }

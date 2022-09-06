@@ -54,8 +54,8 @@ function generateHTML(teamArray) {
         <div class="card-2" style="width: 18rem">
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
-              <h2 class="card-title">${teamArray[1].name}</h2>
-            <h5 class="card-title">"Manager"<h5>
+             <h2 class="card-title">${teamArray[1].name}</h2>
+            <h5 class="card-title">"Intern"<h5>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">${teamArray[1].id}</li>
@@ -71,7 +71,7 @@ function generateHTML(teamArray) {
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
                     <h2 class="card-title">${teamArray[2].name}</h2>
-            <h5 class="card-title">"Manager"<h5>
+            <h5 class="card-title">"Engineer"<h5>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">${teamArray[2].id}</li>
@@ -91,7 +91,7 @@ function generateHTML(teamArray) {
 </html>`;
   };
 
-  fs.writeFile("./sample/team.html", html, function (err) {
+  fs.writeFile("./sample/team.html", html(), function (err) {
     if (err) throw err;
     console.log("All done! Your team profile is ready in sample/team.html!");
   });
