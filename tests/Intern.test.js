@@ -1,4 +1,4 @@
-const Intern = require("./Intern");
+const Intern = require("../lib/Intern.js");
 
 it("Should add employee's school using this.school.", () => {
   const testValue = "school";

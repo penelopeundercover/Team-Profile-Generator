@@ -1,4 +1,4 @@
-const Manager = require("./Manager");
+const Manager = require("../lib/Manager.js");
 
 it("Should add employee's office number using this.officeNumber.", () => {
   const testValue = "office";
