@@ -9,4 +9,5 @@ Clone the repo, install your npms, npm run test to check for errors, and npm sta
 ##Usage
 Answer the questions, then right-click team.html in the Sample folder, and select Open With Live Server. And there it is!
 
+(sample-product-screenshot.png)
 
