@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(255, 87, 127);
+}
+
+.jumbotron {
+  margin: 10px;
+  background-image: url(./confetti-background.jpg);
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(255, 87, 127);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: rgb(58, 176, 255);
+}
