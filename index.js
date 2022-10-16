@@ -59,7 +59,7 @@ function addManager() {
         message: "What is the manager's email address?",
       },
       {
-        type: "number",
+        type: "input",
         name: "officeNumber",
         message: "What is the manager's office number?",
       },

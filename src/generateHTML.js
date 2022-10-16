@@ -6,7 +6,7 @@ function generateManager(managerData) {
   return `<div class="col col-lg-3 m-2 mr-2">
   <div class="card" style="width: 18rem">
           <div class="card-body">
-            <h2 class="card-title">${managerData.name}</h2>
+            <h2>${managerData.name}</h2>
             <h5 class="card-title">"Manager"<h5>
           </div>
           <ul class="list-group list-group-flush">
@@ -94,7 +94,7 @@ function generateHTML(teamArray) {
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="../dist/style.css" />
     <title>Team Profile</title>
   </head>
 
